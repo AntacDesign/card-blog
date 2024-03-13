@@ -4,6 +4,8 @@ interface Props {
 }
 
 const { title } = Astro.props;
+import '@fontsource/lato';
+import '@fontsource/poppins';
 ---
 
 <!doctype html>
@@ -16,8 +18,8 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<article class="container h-screen flex items-center justify-center">
+	<body class="bg-background">
+		<article class="container text-pColor h-screen flex items-center justify-center font-lato text-base">
 			<slot />
 		</article>
 	</body>

@@ -8,6 +8,10 @@ export default {
 				bgCard:'#FFFFFF',
 				tColor: '#111729',
 				pColor: '#677489'
+			},
+			fontFamily:{
+				title: 'Poppins, sans-serif',
+				lato:'Lato, sans-serif'
 			}
 		},
 	},
