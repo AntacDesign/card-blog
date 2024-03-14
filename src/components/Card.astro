@@ -6,18 +6,20 @@ interface Props {
 const {} = Astro.props;
 ---
 
-<article class="w-96 bg-bgCard rounded-xl">
+<article class="w-[26rem] bg-bgCard rounded-xl">
 	<figure class="relative">
 		<img class="rounded-t-xl" src="hero-image-business-card.png" alt="">
 		<img class="absolute bottom-[-1px]" src="white-overlay.svg" alt="">
 	</figure>
 	<section class="px-8">
 		<h1 class="font-title text-tColor font-semibold text-2xl">Perfect solution for small business</h1>
-		<p>Small businesses need to generate leads to grow. You can use tools like Ringy.</p>
+		<p class="my-4">Small businesses need to generate leads to grow. You can use tools like Ringy.</p>
 	</section>
-	<section class="border-t-2">
-		<img src="avatar-image-business-card.png" alt="photo perfil" class="rounded-full w-11 border-4 ">
-		<p>Amy Burgess</p>
-		<p>Customer Manger, Solution Oy</p>
+	<section class="border-t-[1px] flex px-8 py-6">
+		<img src="avatar-image-business-card.png" alt="photo perfil" class="rounded-full w-11 border-4 me-4">
+		<div>
+			<p class="font-title text-tColor font-semibold">Amy Burgess</p>
+			<p class="text-xs">Customer Manger, Solution Oy</p>
+		</div>
 	</section>
 </article>
